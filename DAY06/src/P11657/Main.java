@@ -10,14 +10,14 @@ import java.util.StringTokenizer;
 public class Main {
     static final int INF = 987654321;
     static ArrayList<Edge> edges = new ArrayList<>();
-    static int[] arr;
+    static long[] arr;
 
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
         int n = Integer.parseInt(st.nextToken());
         int m = Integer.parseInt(st.nextToken());
-        arr = new int[n + 1];
+        arr = new long[n + 1];
         Arrays.fill(arr, INF);
         for (int i = 0; i < m; i++) {
             st = new StringTokenizer(br.readLine());
